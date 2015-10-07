@@ -1,6 +1,10 @@
 # MektoryJava2
 Course Page for Mektory Java 2 - Intermediate Java programming
 
+##Contents 
+
+- [Module 1] (https://github.com/nishtahir/MektoryJava2/tree/master/Module1)
+	- Debugging
 			
 ## Important keyboard shortcuts 
 
