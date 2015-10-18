@@ -1,4 +1,4 @@
-package ee.ttu;
+package ee.ttu.exercise;
 
 @SuppressWarnings("unused")
 public class Student {
