@@ -37,3 +37,7 @@ Copy your compiled and packaged `*.jar` into your local maven repository
 ```sh
 mvn install
 ```
+Execute your code from maven. Replace `com.nishtahir.App` with your main class
+```sh
+  mvn exec:java -Dexec.mainClass="com.nishtahir.App"
+```
