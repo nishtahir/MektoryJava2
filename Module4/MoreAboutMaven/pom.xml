@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- Package name -->
+  <groupId>com.nishtahir.MoreAboutMaven</groupId>
+  <!-- Project name -->
+  <artifactId>MoreAboutMaven</artifactId>
+  <!-- Version number -->
+  <version>1.0-SNAPSHOT</version>
+  <!-- mvn package java archive, war web archive, ear enterprise archive -->
+  <packaging>jar</packaging>
+
+  <name>MoreAboutMaven</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <plugins>
+          <!-- Here we are providing configuration information
+              to the maven compiler plugin about what version of the
+              compiler we want to use -->
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.3</version>
+            <configuration>
+              <source>1.6</source>
+              <target>1.6</target>
+            </configuration>
+          </plugin>
+    </plugins>
+</build>
+
+  <!-- Dependencies -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+	    <groupId>commons-io</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>2.4</version>
+    </dependency>
+    <!-- We can add dependencies on *.jar files that have been installed
+         into our local maven repository -->
+    <dependency>
+      <groupId>com.nishtahir</groupId>
+      <artifactId>HelloMaven</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

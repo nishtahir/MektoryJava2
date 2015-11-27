@@ -55,3 +55,5 @@ validation-report.json
 node_modules
 
 *.lock
+
+*/target/
