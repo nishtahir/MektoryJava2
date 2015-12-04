@@ -16,7 +16,7 @@ import java.util.TreeSet;
  */
 public class App {
 	public static void main(String[] args) {
-		
+
 		Map<String, Integer> myMap = new HashMap<>();
 		myMap.put("hello", 50);
 		myMap.put("world", 99);
@@ -26,7 +26,7 @@ public class App {
 		myMap.put("candy", 77);
 		myMap.put("potato", 11);
 		myMap.put("java", 105);
-		
+
 //		Map<Box, Integer> boxMap = new HashMap<>();
 
 //		Iterator<String>mapIter = myMap.keySet().iterator();
@@ -34,35 +34,43 @@ public class App {
 //			String key = mapIter.next();
 //			System.out.println(myMap.get(key));
 //		}
-		
+
 		Set<Box> mySet = new TreeSet<>();
 		mySet.add(new Box("Apples", 55));
 		mySet.add(new Box("Cherry", 22));
 		mySet.add(new Box("Dragon Fruit", 77));
 		mySet.add(new Box("Banana", 33));
-		
-		
+
+
 //		System.out.println(myMap.get("hello"));
-		
+
 		List<String> myCollection = new ArrayList<>();
 		myCollection.add("this");
 		myCollection.add("is ");
 		myCollection.add("a ");
 		myCollection.add("list");
-		
+
 		Collections.sort(myCollection, new Comparator<String>() {
 			@Override
 			public int compare(String o1, String o2) {
 				return o1.compareTo(o2) * -1;
 			}
 		});
-//		
+
+		// Anonymous inner classes that have the
+		// @FunctionalInterface annotation can be replaced with
+		// Lambda expressions *Java 8* and higher
+		
+// 			Collections.sort(myCollection, (o1, o2) -> {
+// 				return o1.compareTo(o2) * -1;
+//	 		});
+
 //		Iterator<String> iter = myCollection.iterator();
 //		while(iter.hasNext()){
 //			String item = iter.next();
 //			System.out.println(item);
 //		}
-		
+
 		for(String item : myCollection){
 			System.out.println(item);
 		}
